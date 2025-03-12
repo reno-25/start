@@ -25,7 +25,7 @@ header nav {
 header nav a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #fff;
+  color: white;
   letter-spacing: 0.1rem;
 }
 
@@ -43,7 +43,7 @@ header nav a {
   inset: 0 0 0 0;
 }
 
-.slider .list .item .img {
+.slider .list .item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -75,7 +75,7 @@ header nav a {
   letter-spacing: 0.1rem;
   margin-bottom: 0.8rem;
   line-height: 3.5rem;
-  background: linear-gradient(black, gray, white);
+  background: linear-gradient(green, yellow, gold, orange);
   background-clip: text;
   color: transparent;
   text-shadow: none;
@@ -98,7 +98,7 @@ header nav a {
   letter-spacing: 0.1rem;
 }
 
-.slider .list .item .detail desc {
+.slider .list .item .detail .desc {
   margin-top: 1rem;
   font-weight: 100;
   font-size: 1rem;
@@ -212,7 +212,7 @@ header nav a {
   transform: translateY(50px);
   filter: blur(50px);
   opacity: 0;
-  animation: showDetail 0.5 1s linear 1 forwards;
+  animation: showDetail 0.5s 1s linear 1 forwards;
 }
 
 @keyframes showDetail {
@@ -323,7 +323,7 @@ header nav a {
 .slider.prev .list .item:nth-child(2) figure,
 .slider.prev .list .item:nth-child(2) .desc,
 .slider.prev .list .item:nth-child(2) .more {
-  animation: hideDetail 0.5 1s linear 1 forwards;
+  animation: hideDetail 0.5s 1s linear 1 forwards;
 }
 
 @keyframes hideDetail {
@@ -334,14 +334,15 @@ header nav a {
   }
 }
 
-.slider.next .arrows button .slider.prev .arrows button {
+.slider.next .arrows button,
+.slider.prev .arrows button {
   pointer-events: none;
 }
 
 .loading-bar {
   width: 0%;
   height: 5px;
-  background-color: red;
+  background-color: #f80;
   position: absolute;
   z-index: 999;
   top: 0;
@@ -361,7 +362,7 @@ header nav a {
 }
 
 /* Mobile Breakpoint */
-@media screen and (max-widdth: 678px) {
+@media screen and (max-width: 678px) {
   .slider .list .item .detail .name {
     font-size: 2.8rem;
     line-height: 2.8rem;
