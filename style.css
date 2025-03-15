@@ -308,7 +308,7 @@ header nav a {
     height: 220px;
     border-radius: 15px;
     left: 50%;
-    bottom: 50%;
+    bottom: 50px;
   }
 }
 
@@ -342,7 +342,7 @@ header nav a {
 
 .loading-bar {
   width: 0%;
-  height: 5px;
+  height: 3px;
   background-color: #f80;
   position: absolute;
   z-index: 999;
@@ -353,7 +353,7 @@ header nav a {
 .slider.next .loading-bar,
 .slider.prev .loading-bar {
   width: 100%;
-  animation: loadingTime 2s linear 1 forwards;
+  animation: loadingTime 3s linear 1 forwards;
 }
 
 @keyframes loadingTime {
